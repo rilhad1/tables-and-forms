@@ -9,17 +9,20 @@
 </head>
 
 <body>
+    <header>
+        <h1>Соціологічне дослідження</h1>
+    </header>
     <form method="POST" action="https://formspree.io/YOUR-EMAIL-HERE">
-        <label>Ім'я:<input type="text" name="name"></label><br>
+        <label>Ім'я:<input type="text" placeholder="Your name" name="name"></label><br>
         <br>
-        <label>Вік:<input type="number" name="age" min="1"></label>
+        <label>Вік:<input type="number"  placeholder="Your age" name="age" min="1"></label>
         <br><br>
         <label>Стать:</label><br>
         <label><input type="radio" name="gender" value="male" checked>Чоловік</label><br>
         <label><input type="radio" name="gender" value="female">Жінка</label> <br>
         <label><input type="radio" name="gender" value="other">Інше</label> <br>
         <br>
-        <label>Улюблена домашня тварина:<br><input type="text" name="animals"></label><br>
+        <label>Улюблена домашня тварина:<br><input type="text"  placeholder="Your favorite pet" name="animals"></label><br>
         <br>
         <label>Тип населеного пункту в якому Ви проживаєте:</label><br>
         <label><input type="radio" name="settlement" value="city" checked>Місто</label><br>
