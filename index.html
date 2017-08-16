@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форми і таблиці</title>
+</head>
+
+<body>
+    <form method="POST" action="https://formspree.io/YOUR-EMAIL-HERE">
+        <label>Ім'я:<input type="text" name="name"></label><br>
+        <br>
+        <label>Вік:<input type="number" name="age" min="1"></label>
+        <br><br>
+        <label>Стать:</label><br>
+        <label><input type="radio" name="gender" value="male" checked>Чоловік</label><br>
+        <label><input type="radio" name="gender" value="female">Жінка</label> <br>
+        <label><input type="radio" name="gender" value="other">Інше</label> <br>
+        <br>
+        <label>Улюблена домашня тварина:<br><input type="text" name="animals"></label><br>
+        <br>
+        <label>Тип населеного пункту в якому Ви проживаєте:</label><br>
+        <label><input type="radio" name="settlement" value="city" checked>Місто</label><br>
+        <label><input type="radio" name="settlement" value="village">Село</label> <br>
+        <label><input type="radio" name="settlement" value="other">Інше</label><br>
+        <label><input type="text" name="settlement"></label>
+        <br>
+        <br>
+        <label>Ваше хоббі:</label><br>
+        <label><input type="checkbox" name="hobby"/>Спорт та рибалка</label><br>
+        <label><input type="checkbox" name="hobby"/>Колекціонування</label><br>
+        <label><input type="checkbox" name="hobby"/>Музика</label><br>
+        <label><input type="checkbox" name="hobby"/>Подорожі, туризм</label><br>
+        <label><input type="checkbox" name="hobby"/>Читання книг</label><br>
+        <br>
+        <label>Якому виду транспорту Ви надаєте перевагу?<br>
+        <select name="transport">
+        <option value="car">Автомобіль</option>
+        <option value="plane">Літак</option>
+        <option value="train">Поїзд</option>
+        </select>
+        </label><br>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+    <a href="tables.html">Таблиці</a>
+</body>
+
+</html>
