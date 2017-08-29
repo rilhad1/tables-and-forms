@@ -14,33 +14,33 @@
         <h1>Соціологічне дослідження</h1>
     </header>
     <form method="POST" action="https://formspree.io/rilhad1@gmail.com">
-        <label>Ім'я:<input type="text" placeholder="Your name" name="name"></label><br>
+        <label>Ім'я:<input id="name" type="text" placeholder="Your name" name="name"></label><br>
         <br>
-        <label>Вік:<input type="number"  placeholder="Your age" name="age" min="1"></label>
+        <label>Вік:<input id="age" type="number"  placeholder="Your age" name="age" min="1"></label>
         <br><br>
         <label>Стать:</label><br>
         <label><input type="radio" name="gender" value="male" checked>Чоловік</label><br>
         <label><input type="radio" name="gender" value="female">Жінка</label> <br>
         <label><input type="radio" name="gender" value="other">Інше</label> <br>
         <br>
-        <label>Улюблена домашня тварина:<br><input type="text"  placeholder="Your favorite pet" name="animals"></label><br>
+        <label>Улюблена домашня тварина:<br><input id="pet" type="text"  placeholder="Your favorite pet" name="animals"></label><br>
         <br>
         <label>Тип населеного пункту в якому Ви проживаєте:</label><br>
         <label><input type="radio" name="settlement" value="city" checked>Місто</label><br>
         <label><input type="radio" name="settlement" value="village">Село</label> <br>
         <label><input type="radio" name="settlement" value="other">Інше</label><br>
-        <label><input type="text" name="settlement"></label>
+        <label><input id="settlement" type="text" name="settlement"></label>
         <br>
         <br>
         <label>Ваше хоббі:</label><br>
-        <label><input type="checkbox" name="hobby"/>Спорт та рибалка</label><br>
-        <label><input type="checkbox" name="hobby"/>Колекціонування</label><br>
-        <label><input type="checkbox" name="hobby"/>Музика</label><br>
-        <label><input type="checkbox" name="hobby"/>Подорожі, туризм</label><br>
-        <label><input type="checkbox" name="hobby"/>Читання книг</label><br>
+        <label><input type="checkbox" name="fish" value="fish">Спорт та рибалка</label><br>
+        <label><input type="checkbox" name="colection" value="colection">Колекціонування</label><br>
+        <label><input type="checkbox" name="music" value="music">Музика</label><br>
+        <label><input type="checkbox" name="travel" value="travel">Подорожі, туризм</label><br>
+        <label><input type="checkbox" name="books" value="books">Читання книг</label><br>
         <br>
         <label>Якому виду транспорту Ви надаєте перевагу?<br>
-        <select name="transport">
+        <select id="transport" name="transport">
         <option value="car">Автомобіль</option>
         <option value="plane">Літак</option>
         <option value="train">Поїзд</option>
@@ -51,6 +51,12 @@
         <input type="reset" value="Скинути">
     </form>
     <a href="tables.html">Таблиці</a>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
