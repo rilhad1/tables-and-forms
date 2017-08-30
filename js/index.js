@@ -14,10 +14,12 @@ function sendData(e) {
             pet: $('#pet').val(),
             settlement: $('input:radio[name=settlement]:checked').val(),
             settlementother: $('#settlement').val(),
-            // hobby: $('input:checkbox:checked').val(function(){
-            //     if (input:checkbox:checked)
-            //     return name;}),
-            transport: $('select#transport option:selected').val(),
+            fish: $('input[name=fish]:checked').val(),
+            colection: $('input[name=colection]:checked').val(),
+            music: $('input[name=music]:checked').val(),
+            travel: $('input[name=travel]:checked').val(),
+            books: $('input[name=books]:checked').val(),
+            transport: $('select#transport option:selected').val()
         },
         dataType: "json"
     }).done(function() {
